@@ -52,7 +52,7 @@ public:
     }
 
     // similar behaviour to construct by copy
-    bintree operator=(const bintree& bt)
+    bintree& operator=(const bintree& bt)
     {
         if (this != &bt)
             this->m_Ptr = copy(bt.m_Ptr);
