@@ -7,7 +7,7 @@ template <typename OBJ_TYPE>
 class bintree
 {
 public:
-// construct an empty tree
+    // construct an empty tree
     bintree() 
     :   m_Ptr(nullptr) 
     {   }
