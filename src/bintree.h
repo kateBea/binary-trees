@@ -24,9 +24,7 @@ public:
 
     // construct tree with val as value and subtrees left and right
     bintree(const OBJ_TYPE& val, const bintree& left, const bintree& right)
-    :   m_Ptr(new Node (val, 
-                        copy(left.m_Ptr),
-                        copy(right.m_Ptr))) 
+    :   m_Ptr(new Node (val, copy(left.m_Ptr), copy(right.m_Ptr))) 
     {   }
 
     // return the left subtree
@@ -85,10 +83,10 @@ private:
     {
         if (ptr)
             return std::shared_ptr<Node> (new Node(ptr->m_Val, 
-                                              copy(ptr->m_Left), 
-                                              copy(ptr->m_Right)));
+                                                   copy(ptr->m_Left), 
+                                                   copy(ptr->m_Right)));
         
-        return std::shared_ptr<Node> (nullptr);
+        return nullptr;
     } 
 
     bintree (const std::shared_ptr<Node>& ptr) 
@@ -99,6 +97,4 @@ private:
     std::shared_ptr<Node> m_Ptr;
 };
 
-
-
-#endif
+#endif // END BINTREE_HH

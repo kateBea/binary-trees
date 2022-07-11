@@ -1,8 +1,6 @@
 #include <iostream>
 #include <bintree.h>
 
-// g++ -o main.exe test.cc -Wall -Wextra -std=c++17 -I C:\Users\zanet\Desktop\bt\binary-trees\src
-
 void read(bintree<double>& bt)
 {
     double input;
@@ -21,6 +19,7 @@ void read(bintree<double>& bt)
     }
 }
 
+// postorder traverse
 void write(const bintree<double>& bt)
 {
     if (not bt.empty())
@@ -38,8 +37,6 @@ int main(int, char**)
 
     read(bt);
     write(bt);
-
     
-
     return EXIT_SUCCESS;
 }
