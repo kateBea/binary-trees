@@ -73,13 +73,13 @@ private:
         {   }
 
         Node (const OBJ_TYPE& val, 
-              const std::shared_ptr<Node>& left, 
-              const std::shared_ptr<Node>& right) 
+              std::shared_ptr<Node> left, 
+              std::shared_ptr<Node> right) 
         :   m_Val(val), m_Left(left), m_Right(right) 
         {  }
     };
 
-    std::shared_ptr<Node> copy(const std::shared_ptr<Node>& ptr)
+    std::shared_ptr<Node> copy(std::shared_ptr<Node> ptr)
     {
         if (ptr)
             return std::shared_ptr<Node> (new Node(ptr->m_Val, 
@@ -89,7 +89,7 @@ private:
         return nullptr;
     } 
 
-    bintree (const std::shared_ptr<Node>& ptr) 
+    bintree (std::shared_ptr<Node> ptr) 
     :   m_Ptr(ptr) 
     {   }
 
