@@ -9,7 +9,7 @@ class bintree
 public:
     // construct an empty tree
     bintree() 
-    :   m_Ptr() 
+    :   m_Ptr(nullptr) 
     {   }
 
     // construct a tree as exact copy of bt
