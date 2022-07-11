@@ -1,4 +1,4 @@
-# binary-trees
+# binary-tree
 Simple binary tree class using c++ stl smart pointers
 
 # Linux compile and test:
