@@ -82,9 +82,7 @@ private:
     std::shared_ptr<Node> copy(std::shared_ptr<Node> ptr)
     {
         if (ptr)
-            return std::shared_ptr<Node> (new Node(ptr->m_Val, 
-                                                   copy(ptr->m_Left), 
-                                                   copy(ptr->m_Right)));
+            return std::shared_ptr<Node> (new Node(ptr->m_Val, copy(ptr->m_Left), copy(ptr->m_Right)));
         
         return nullptr;
     } 
