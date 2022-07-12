@@ -6,6 +6,6 @@ Simple binary tree class using c++ stl smart pointers
 - compile command:
 
 ```
-g++ -o main.exe test.cc -Wall -Wextra -std=c++17 -I <path_to_bintree.h>
+g++ -o main test.cc -Wall -Wextra -std=c++17 -I <path_to_bintree.h>
 ``` 
 
