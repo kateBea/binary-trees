@@ -38,5 +38,5 @@ int main(int, char**)
     read(bt);
     write(bt);
     
-    return EXIT_SUCCESS;
+    return 0;
 }
